@@ -1,0 +1,94 @@
+/* ... (se mantiene lo anterior hasta :root) */
+:root {
+  --primary: #303A6B;
+  --bg: #FFF8F0;
+  --text-dark: #1F284B;
+  --text-light: #ffffff;
+  --button-radius: 8px;
+}
+
+/* Compacta espaciado y mejora distribución */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--bg);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Header más compacto */
+header {
+  background-color: var(--primary);
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 0.5rem;
+}
+
+/* Menor espacio en sección hero */
+.hero, .infinite-hero {
+  padding: 2.5rem 1.5rem;
+  gap: 1.5rem;
+}
+
+/* Texto más ajustado */
+.hero-text h1,
+.infinite-text h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.hero-text p,
+.infinite-text p {
+  margin-bottom: 1.2rem;
+}
+
+/* Botón ligeramente más pequeño */
+.btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+}
+
+/* Sección "SEÑALES Y EFECTOS" más contenida */
+.section-signals {
+  padding: 2rem 1.5rem;
+}
+.section-signals h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+.section-signals p {
+  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+}
+
+/* Sección info más comprimida */
+.infinite-info {
+  padding: 3rem 1.5rem;
+}
+.infinite-info h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+.info-content {
+  gap: 1.5rem;
+}
+.info-text p {
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Media query también más compacta */
+@media (max-width: 768px) {
+  .hero, .infinite-hero, .info-content {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav {
+    margin-top: 0.25rem;
+  }
+}
